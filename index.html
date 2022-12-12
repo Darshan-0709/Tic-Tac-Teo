@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="title">tic tac teo</h1>
+        <div class="game__container">
+          <div class="box d-flex js-sa ai-center">
+            <p data-x-score class="player__score d-flex d-center x-score">0</p>
+            <p data-player class="player">X Turn</p>
+            <p data-o-score class="player__score d-flex d-center o-score">0</p>
+          </div>
+          <div data-board class="board">
+            <div data-cell class="cell bt bl"></div>
+            <div data-cell class="cell bt"></div>
+            <div data-cell class="cell bt br"></div>
+            <div data-cell class="cell bl"></div>
+            <div data-cell class="cell"></div>
+            <div data-cell class="cell br"></div>
+            <div data-cell class="cell bb bl"></div>
+            <div data-cell class="cell bb"></div>
+            <div data-cell class="cell bb br"></div>
+            <div
+              data-winning-box
+              class="winning__box d-flex fd-column d-center"
+            >
+              <p data-winning-massage class="winning__massage">X wins</p>
+              <button data-play-again-button class="winning__btn">
+                Play Again
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
